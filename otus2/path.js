@@ -26,6 +26,6 @@ function getPath(target) {
         result += element["tag"].toLowerCase()
         result += ":nth-child(" + (element['index'] + 1) + ") "
     });
-    console.log(result);
     document.querySelector(result).style.color = "#f4e"
+    return result;
 }
